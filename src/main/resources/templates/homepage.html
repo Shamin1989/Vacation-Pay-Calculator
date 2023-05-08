@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор отпускных</title>
+</head>
+
+<style>
+    body{
+        background-image:  url("https://klike.net/uploads/posts/2022-12/1671860735_4-1.jpg");
+        background-size: 100%;
+    }
+    input {
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        padding: .4em 1em calc(.4em + 3px);
+        border-radius: 10px;
+        background: rgb(64,199,129);
+        box-shadow: 0 -3px rgb(53,167,110) inset;
+        transition: 0.2s;
+    }
+    input:hover { background: rgb(53, 167, 110); }
+    input {
+        background: rgb(33,147,90);
+        box-shadow: 0 3px rgb(33,147,90) inset;
+    }
+</style>
+
+<body>
+<H1 style="color:dodgerblue; text-align:center; font-size:50px;"><strong><BLOCKQUOTE>Калькулятор отпускных</BLOCKQUOTE></strong></H1>
+
+<form style="color:white; text-align:center; font-size:30px;" th:method="GET" action="/calculate">
+    <label for="averageSalary" > введите среднюю зарплату:</label>
+    <input name="averageSalary" type="text" id="averageSalary" style="color:blue; font-size:20px"/>
+    <br>
+    <br>
+    <label for="numberOfVacationDays"> введите количество дней отпуска:</label>
+    <input name="numberOfVacationDays" type="text" id="numberOfVacationDays" style="color:blue; font-size:20px"/>
+    <br>
+    <br>
+<!--    <input type="submit" value="Рассчитать" style="color: red; background: rgb(64,199,129); font-size:30px" />-->
+    <input type="submit" value="Рассчитать сумму отпускных" style="color:blue; font-size:20px;"/>
+</form>
+
+</body>
+</html>

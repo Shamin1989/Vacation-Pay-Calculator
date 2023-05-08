@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Рассчитано</title>
+</head>
+
+<style>
+    body{
+        background-image:  url("https://klike.net/uploads/posts/2022-12/1671860735_4-1.jpg");
+        background-size: 100%;
+    }
+   .image {
+       text-align: center;
+    }
+</style>
+<body>
+<H1 style="color:white; text-align:center; font-size:50px;"><strong><BLOCKQUOTE>Ваша сумма отпускных равна:</BLOCKQUOTE></strong></H1>
+ <p th:text="${result}" style="color:white; text-align:center; font-size:50px;"/>
+<br>
+<br>
+<p class="image">
+    <img src= "https://media.tenor.com/iilr8ODiv8kAAAAC/money-rain.gif" width="1000">
+</p>
+</body>
+</html>
